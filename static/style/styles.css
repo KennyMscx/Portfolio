@@ -61,3 +61,34 @@ img {
     width: 142px;
     height: 142px;
 }
+@keyframes letter-highlight {
+    0% {background-color: transparent; color: #a8adb2;}
+    100% {background-color: rgb(214, 92, 44); color: #ffffff;}
+}
+
+.highlight {
+    animation: letter-highlight 0.5s ease-in-out forwards;
+    display: inline-block;
+}
+
+.highlight-typewriter {
+    background-color: white;
+    color: black;
+}
+
+@keyframes typewriter {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#portfolio {
+    margin-top: 50px;
+}
+
+#portfolio h1, #portfolio h2 {
+    animation: typewriter 2s ease-in-out forwards;
+    font-family: system-ui, Roboto, "Helvetica Neue", sans-serif;
+    color: #a8adb2;
+    margin: 0;
+    padding: 0;
+}
