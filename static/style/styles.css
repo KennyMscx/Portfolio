@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c0f11;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 60%; /* adjust this value as needed */
+    margin: auto; /* this will center the nav element */
+}
+
+#Infos {
+    display: flex;
+    align-items: center; /* this will vertically align the items in the middle */
+    gap: 20px; /* this will create some space between the image and the text */
+    margin-top: 50px; /* adjust as needed */
+}
+
+#Infos img {
+    margin-right: 20px; /* this will create some space between the image and the text */
+}
+
+#Infos p, #beginning-sentence {
+    font-family: system-ui, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 30px; /* adjust as needed */
+    color: #a8adb2;
+    width: 50%; /* adjust this value as needed */
+    max-width: 600px; /* adjust this value as needed */
+}
+
+#beginning-sentence {
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+nav #name a, nav #links a{
+    text-decoration: none;
+    font-family: system-ui, Roboto, "Helvetica Neue", sans-serif;
+    color: #a8adb2;
+}
+
+#name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#links a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 25%;
+    width: 142px;
+    height: 142px;
+}
