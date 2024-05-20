@@ -97,12 +97,42 @@ body {
     z-index: 1;
 }
 
-#qwixx1 {
+#chatbot {
+    box-shadow: 0 0 100px 10px white;
+    position: relative;
+    height: auto;
+    width: 60vh;
+    border-radius: 5%;
+    left: 4.2%;
+    z-index: 1;
+}
+
+#qwixx1, #AI2, #AI3 {
     position: absolute;
     width: 50vh;
     z-index: 2;
     left: 70%;
     top: 7.5%;
+    box-shadow: 0px 0 100px 10px rgb(255,255,255,0.35);
+    border-radius: 10%;
+}
+
+#AI3 {
+    position: absolute;
+    width: 50vh;
+    z-index: 2;
+    left: 60%;
+    top: 50%;
+    box-shadow: 0px 0 100px 10px rgb(255,255,255,0.35);
+    border-radius: 10%;
+}
+
+#AI2 {
+    position: absolute;
+    width: 25vh;
+    z-index: 2;
+    left: 70%;
+    top: 10%;
     box-shadow: 0px 0 100px 10px rgb(255,255,255,0.35);
     border-radius: 10%;
 }
