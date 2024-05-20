@@ -49,20 +49,20 @@ const projects = [
         name: '🇩🇪 🩻  Injuries Reporting Website',
         subTitle: 'April 2024 -> IN PROGRESS / Heilbronn GERMANY',
         description: 'A website that allows athletes to report their injuries during sports activities, in accordance with the recommendations of the Olympic Committee and GDPR, for research purposes and the needs of sports teams. ',
-        url: '/project/injuries.html'
+        url: '../Portfolio/project/injuries.html'
     },
     {
         name: '🏴󠁧󠁢󠁳󠁣󠁴󠁿󠁧󠁢󠁳󠁣󠁴🤖󠁿 Natural Language AI',
         subTitle: 'April 2023 -> June 2023 / Aberdeen SCOTLAND',
         description: 'An AI bot capable of having a natural conversation with a human being, thanks to pre-built models that have\n' +
             'been then fine-tuned and trained on custom datasets. All of that in Robert Gordon University’s research lab in Scotland.',
-        url: '/project/AI.html'
+        url: '../Portfolio/project/AI.html'
     },
     {
         name: '󠁿👾🛜 Online Board Game',
         subTitle: 'February 2023 -> April 2023 / Bourg-en-Bresse FRANCE',
         description: 'As a team we programmed the \'Qwixx\' board game and developed an online playable version, featuring multiple rooms, support for as many players as desired, and a very intuitive user interface',
-        url: '/project/qwixx.html'
+        url: '../Portfolio/project/qwixx.html'
     }
 ]
 
