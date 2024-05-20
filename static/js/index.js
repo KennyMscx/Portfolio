@@ -16,9 +16,10 @@ if (m < 0 || (m === 0 && currentDate.getDate() < birthdate.getDate())) {
 // Get the p element
 const element = document.querySelector('#Infos p');
 
-// Split the word into an array of letters, wrap each letter in a span, and join the array back into a string
 const word = 'Lyon 1';
-const highlightedWord = word.split('').map((letter, index) => `<span class="highlight" style="animation-delay: ${index * 0.2}s">${letter}</span>`).join('');
+const highlightedWord = word.split('').map((letter, index) => {
+    return `<span class="highlight" style="animation-delay: ${index * 0.2}s">${letter}</span>`;
+}).join('');
 
 // Clear the p element
 element.innerHTML = `<div id='beginning-sentence'>Hi, I'm Kenny.</div> A ${age} years old student in software engineering at the University of ${highlightedWord}.`;
@@ -30,14 +31,31 @@ const highlightDuration = word.length * 0.2 * 1000;
 const portfolioElement = document.querySelector('#portfolio');
 
 // Your portfolio title
-const portfolioTitle = 'Here my Portfolio:';
+const portfolioTitle = 'HERE MY PORTFOLIO :';
 
 // Create a new h1 element for the portfolio title
 const titleElement = document.createElement('h1');
 portfolioElement.appendChild(titleElement);
 
 // Your projects
-const projects = ['Project 1', 'Project 2', 'Project 3']; // Replace with your actual projects
+const projects = [
+    {
+        name: '🇩🇪 🩻  Injuries Reporting Website',
+        subTitle: 'April 2024 -> IN PROGRESS / Heilbronn GERMANY',
+        description: 'A website that allows athletes to report their injuries during sports activities, in accordance with the recommendations of the Olympic Committee and GDPR, for research purposes and the needs of sports teams. '
+    },
+    {
+        name: '🏴󠁧󠁢󠁳󠁣󠁴󠁿󠁧󠁢󠁳󠁣󠁴🤖󠁿 Natural Language AI',
+        subTitle: 'April 2023 -> June 2023 / Aberdeen SCOTLAND',
+        description: 'An AI bot capable of having a natural conversation with a human being, thanks to pre-built models that have\n' +
+            'been then fine-tuned and trained on custom datasets. All of that in Robert Gordon University’s research lab in Scotland.'
+    },
+    {
+        name: '󠁿👾🛜 Online Board Game',
+        subTitle: 'February 2023 -> April 2023 / Bourg-en-Bresse FRANCE',
+        description: 'As a team we programmed the \'Qwixx\' board game and developed an online playable version, featuring multiple rooms, support for as many players as desired, and a very intuitive user interface'
+    }
+]
 
 // Delay the start of the typewriter effect until after the letter-highlight effect
 setTimeout(() => {
@@ -46,14 +64,24 @@ setTimeout(() => {
 
     // Call the typewriter function for each project
     projects.forEach((project, index) => {
-        // Create a new h2 element for the project title
-        const projectElement = document.createElement('h2');
+        // Create a new div element for the project
+        const projectElement = document.createElement('div');
         portfolioElement.appendChild(projectElement);
 
-        // Call the typewriter function for the project title
-        setTimeout(() => {
-            typewriter(project, projectElement);
-        }, (portfolioTitle.length + index * project.length) * 100); // Adjust the start time as needed
+        // Create a new h2 element for the project title
+        const titleElement = document.createElement('h2');
+        titleElement.textContent = project.name;
+        projectElement.appendChild(titleElement);
+
+        // Create a new h3 element for the project sub-title
+        const subTitleElement = document.createElement('h3');
+        subTitleElement.textContent = project.subTitle;
+        projectElement.appendChild(subTitleElement);
+
+        // Create a new p element for the project description
+        const descriptionElement = document.createElement('p');
+        descriptionElement.textContent = project.description;
+        projectElement.appendChild(descriptionElement);
     });
 }, highlightDuration);
 

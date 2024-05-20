@@ -29,7 +29,7 @@ nav {
     font-family: system-ui, Roboto, "Helvetica Neue", sans-serif;
     font-size: 30px; /* adjust as needed */
     color: #a8adb2;
-    width: 50%; /* adjust this value as needed */
+    width: 70%; /* adjust this value as needed */
     max-width: 600px; /* adjust this value as needed */
 }
 
@@ -82,13 +82,41 @@ img {
 }
 
 #portfolio {
-    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 60%;
+    margin: 100px auto auto auto;
+    gap: 20px;
 }
 
 #portfolio h1, #portfolio h2 {
     animation: typewriter 2s ease-in-out forwards;
-    font-family: system-ui, Roboto, "Helvetica Neue", sans-serif;
-    color: #a8adb2;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 30px; /* adjust as needed */
+    font-weight: normal;
+    color: white;
     margin: 0;
     padding: 0;
+}
+
+#portfolio h1 {
+    margin-bottom: 10px;
+    font-size: 30px; /* adjust as needed */
+    color: #d6d6d6;
+    font-family: "Roboto", "Helvetica Neue", sans-serif;
+    letter-spacing: 5px; /* adjust this value as needed */
+    font-weight: bold;
+}
+
+#portfolio div {
+    color: #a8adb2;
+}
+
+#portfolio div h3{
+    color: #a8adb2;
+    font-family: "Roboto", "Helvetica Neue", sans-serif;
+    font-weight: 350;
+    margin: 2px 0 0 1px;
+    letter-spacing: 5px; /* adjust this value as needed */
 }
