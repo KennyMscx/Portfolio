@@ -120,3 +120,15 @@ img {
     margin: 2px 0 0 1px;
     letter-spacing: 5px; /* adjust this value as needed */
 }
+
+/* Style for project title links */
+.project-title-link {
+    text-decoration: none;
+    color: #a8adb2;
+}
+
+.project-title-link:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
