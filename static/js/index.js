@@ -16,16 +16,22 @@ if (m < 0 || (m === 0 && currentDate.getDate() < birthdate.getDate())) {
 // Get the p element
 const element = document.querySelector('#Infos p');
 
-const word = 'Lyon 1';
+const word = 'University of Lyon 1';
 const highlightedWord = word.split('').map((letter, index) => {
-    return `<span class="highlight" style="animation-delay: ${index * 0.2}s">${letter}</span>`;
+    if (letter === ' ') {
+        return ' '; // Preserve spaces as they are
+    }
+    return `<span class="highlight" style="animation-delay: ${index * 0.05}s">${letter}</span>`;
 }).join('');
 
+console.log(highlightedWord);
+
+
 // Clear the p element
-element.innerHTML = `<div id='beginning-sentence'>Hi, I'm Kenny.</div> A ${age} years old student in software engineering at the University of ${highlightedWord}.`;
+element.innerHTML = `<div id='beginning-sentence'>Hi, I'm Kenny.</div> A ${age} years old student in software engineering at the ${highlightedWord}.`;
 
 // Calculate the total duration of the letter-highlight effect (in milliseconds)
-const highlightDuration = word.length * 0.2 * 1000;
+const highlightDuration = word.length *  0.05 * 1000;
 
 // Get the portfolio element
 const portfolioElement = document.querySelector('#portfolio');

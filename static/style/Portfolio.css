@@ -28,6 +28,10 @@ nav #name a, nav #links a{
     color: #333;
 }
 
+#links a:hover {
+    color: rgb(214, 92, 44);
+}
+
 p {
     font-size: 1.8vh;
     text-align: justify;
