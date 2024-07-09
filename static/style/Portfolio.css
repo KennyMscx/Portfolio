@@ -276,3 +276,14 @@ body {
 .footer a:hover {
     color: #030b22;
 }
+
+#QRCodeSIRS {
+    width: 2em;
+}
+
+#Website{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
